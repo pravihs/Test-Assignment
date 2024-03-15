@@ -6,3 +6,11 @@ task run(type: JavaExec) {
     main = 'main.java.cachemodule.RunApp'
     classpath = sourceSets.main.runtimeClasspath
 }
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+        testImplementation "junit:junit:4.12"
+}
