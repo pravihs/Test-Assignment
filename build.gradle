@@ -1,1 +1,8 @@
-apply plugin: 'java'
+plugins {
+    id 'java'
+}
+
+task run(type: JavaExec) {
+    main = 'main.java.cachemodule.RunApp'
+    classpath = sourceSets.main.runtimeClasspath
+}
