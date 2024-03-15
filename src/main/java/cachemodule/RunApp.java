@@ -1,5 +1,7 @@
 package main.java.cachemodule;
 
+import main.java.cachemodule.ModuleApp.Cache;
+
 public class RunApp {
     public static void main(String[] args) {
         Cache<Integer, String> cache = new Cache<>(2, EvictionStrategy.LEAST_RECENTLY_USED);
